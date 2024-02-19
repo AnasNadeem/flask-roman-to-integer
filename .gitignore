@@ -1,0 +1,38 @@
+# Local Environment
+env
+venv
+# Config file
+.env
+*__pycache__*
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Temp files
+tmp/
+temp/
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Static files
+staticfiles/
+
+# Database
+db.sqlite3
+postgres-data/
+postgres_data/
+
+# Media
+media/
