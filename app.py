@@ -35,8 +35,13 @@ class Conversion:
 conversion = Conversion()
 
 
+@app.route("/")
+def index():
+    return "<p>Go to /number/:value</p>"
+
+
 @app.route("/number/<value>")
-def index(value):
+def convert_to_integer(value):
     data = {
         'original': 'roman',
         'value': value
@@ -50,4 +55,4 @@ def index(value):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
